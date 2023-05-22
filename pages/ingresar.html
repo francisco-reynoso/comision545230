@@ -14,39 +14,45 @@
     </header>
     <main>
         <h2>Logueate en nuestra pagina</h2>
-        <form action="">
-            <fieldset>
-                <legend>ingresa a nuestra pagina</legend>
-                <label for="nombre">nombre:</label>
-                <input type= "text" id="nombre" placeholder="ingresa tu nombre" required>
-                <label for="apellido">apellido:</label>
-                <input type= "text" id="apellido" placeholder="ingresa tu apellido" required>
-                <label for="pass">contraseña:</label>
-                <input type="password" id="pass" placeholder="ingrese contraseña" required>
-                <label for="email">email:</label>
-                <input type="email" id="email" placeholder="ingrese email" required>
-            </fieldset>
-            <input type="submit">
-            <input type="reset">
-        </form>
+        <div class="container formulario">
+            <form class="row">
+                <div class="mb-3 col-lg-3 col-sm-12">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" >
+                </div>
+                <div class="mb-3 col-lg-3 col-sm-12">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" >
+                </div>
+                <div class="mb-3 col-lg-3 col-sm-12">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb- col-lg-3 col-sm-12">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+        </div>
         <section class="imgIngreso">
-            <div>
+            <div class="img-jeans">
                 <a href="../pages/jeans.html"><img src="../assests/images/jeans.jpg" ></a>
             </div>
-            <div>
+            <div class="img-remeras">
                 <a href="../pages/remeras.html"><img src="../assests/images/remeras.jpg" ></a>
             </div>
-            <div>
+            <div class="img-zapatillas">
                 <a href="../pages/zapatillas.html"><img src="../assests/images/zapatillas.jpg" ></a>
             </div>
-            <div>
+            <div class="img-camperas">
                 <a href="../pages/camperas.html"><img src="../assests/images/camperas.jpg" ></a>
             </div>
-            <div>
+            <div class="img-accesorios">
                 <a href="../pages/accesorios.html"><img src="../assests/images/accesorios.jpg" ></a>
             </div>   
         </section>
-        <button><a href="../index.html">volver a la pagina principal</a></button>
+        <button class="btn-regreso"><a href="../index.html">volver a la pagina principal</a></button>
 
     </main>
     <footer>

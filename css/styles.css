@@ -292,11 +292,49 @@ section .jeans6{
     grid-area: jeans6;
 }
 
+/*EMPIEZO CON LA SECCION Del INGRESO*/
+.formulario{
+    font-size: 2rem;
+}
+.formulario button {
+    font-size: 1.5rem;
+}
+.imgIngreso{
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem;
+}
+
+.imgIngreso div img {
+    width: 18rem;
+    height: 22rem;
+    overflow:hidden;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.imgIngreso div img:hover{
+    padding: 0.1rem;
+    background-color: black;
+}
+
+.btn-regreso{
+    padding: 0.5rem;
+    margin:2rem;
+    border-style: ridge;
+    font-size: 2rem;
+    
+}
+.btn-regreso a:hover{
+    color: #6D5D6E;
+}
+.btn-regreso:hover{
+    background-color: rgba(208, 170, 66, 0.278);
+   
+}
 
 
-
-/*MEDIA QUERY DEL INDEX*/
+/*MEDIA QUERY*/
 @media(max-width:768px){
+    /* DEL INDEX*/
     header{
         display: flex;
         flex-direction: column;
@@ -350,5 +388,27 @@ section .jeans6{
         padding-top:2rem ;
     }
 
+    /*EMPIEZO CON LA SECCION Del INGRESO*/
+    .imgIngreso{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 5rem;
+        
+    }
+    .btn-regreso{
+        margin:1rem;
+        font-size: 1rem;
+    }
+    
 }
-/*MEDIA QUERY DEL INDEX*/
+@media(max-width:1024px){
+    /*LA SECCION Del INGRESO*/
+    .imgIngreso div img {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 15rem;
+        height: 19rem;
+        margin: 1rem;
+    }
+}
