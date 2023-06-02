@@ -118,21 +118,20 @@ main .contenedor-texto .texto h3 {
   justify-content: center;
   align-content: center;
 }
-.container-ropa .ropa .jeans {
+.container-ropa .ropa .jeans, .container-ropa .ropa .camperas, .container-ropa .ropa .zapatillas, .container-ropa .ropa .remeras {
   background-color: rgb(6, 11, 11);
-  background-image: url(../../assests/images/jeans.jpg);
+  background-image: url(../assests/images/jeans.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 .container-ropa .ropa .remeras {
-  background-color: rgb(85, 37, 126);
-  background-image: url(../../assests/images/remeras.jpg);
+  background-image: url(../assests/images/remeras.jpg);
 }
 .container-ropa .ropa .zapatillas {
-  background-color: rgb(124, 32, 38);
-  background-image: url(../../assests/images/zapatillas.jpg);
+  background-image: url(../assests/images/zapatillas.jpg);
 }
 .container-ropa .ropa .camperas {
-  background-color: rgb(69, 96, 96);
-  background-image: url(../../assests/images/camperas.jpg);
+  background-image: url(../assests/images/camperas.jpg);
 }
 .container-ropa .ropa .bot-ropa {
   display: flex;
@@ -144,7 +143,7 @@ main .contenedor-texto .texto h3 {
 }
 .container-ropa .ropa .bot-ropa button {
   background-color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-radius: 0.5rem;
   opacity: 0.8;
 }
@@ -152,6 +151,10 @@ main .contenedor-texto .texto h3 {
   color: white;
   text-decoration: none;
   padding: 1rem;
+}
+.container-ropa .ropa .bot-ropa :hover {
+  padding: 0.5rem;
+  opacity: 1;
 }
 
 .container-acce {
@@ -169,12 +172,186 @@ main .contenedor-texto .texto h3 {
   justify-content: center;
   align-items: center;
   gap: 0;
-  width: 30rem;
-  height: 30rem;
-  background-color: rgb(120, 83, 83);
-  background-image: url(../../assests/images/accesorios.jpg);
+  width: 35rem;
+  height: 35rem;
+  background-image: url(../assests/images/accesorios.jpg);
+  background-position: center center;
+  background-size: cover;
   border-radius: 100%;
   margin: 10rem 0rem;
+}
+.container-acce .accesorios button {
+  background-color: black;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+}
+.container-acce .accesorios button a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.container-acce .accesorios :hover {
+  padding: 0.5rem;
+  opacity: 1;
+}
+
+.ingreso {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: end;
+  gap: 0;
+}
+.ingreso h1 {
+  padding: 3rem 0rem;
+  font-weight: 700;
+  color: black;
+}
+
+main .formulario {
+  font-size: 2rem;
+}
+main .formulario button {
+  margin: 2rem;
+  font-size: 1.5rem;
+  border-radius: 5%;
+  background-color: #6D5D6E;
+  border: solid;
+  border-color: #6D5D6E;
+  padding: 0rem;
+}
+main .formulario button:hover {
+  background-color: black;
+  border-color: black;
+  border-radius: 10%;
+}
+main .img-ingreso {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+  gap: 1rem;
+}
+main .img-ingreso div {
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+}
+main .img-ingreso div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .img-ingreso div:hover {
+  padding: 0.2rem;
+  border-radius: 10%;
+}
+main button {
+  font-size: 1.8rem;
+  margin: 3rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #6D5D6E;
+  border-radius: 15%;
+}
+main button a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+main button:hover {
+  background-color: #F4EEE0;
+  border-color: #F4EEE0;
+}
+
+main .secc-ropa {
+  padding: 10rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0rem;
+}
+
+.mas-paginas {
+  background-color: #6D5D6E;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+.mas-paginas .contenedor-li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0rem;
+}
+.mas-paginas .contenedor-li li {
+  list-style: none;
+}
+.mas-paginas .contenedor-li li a {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.mas-paginas .contenedor-li li a:hover {
+  text-decoration: none;
+}
+
+.galeria {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  grid-template-areas: "";
+  justify-content: center;
+  align-content: center;
+}
+.galeria .elemento {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.galeria .elemento img {
+  width: 25rem;
+  object-fit: contain;
+}
+.galeria .elemento p {
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  background-color: #6D5D6E;
+  padding-bottom: 0.5rem;
+}
+footer .redes {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+footer .redes a img {
+  width: 5rem;
+  height: 5rem;
+}
+footer .redes a :hover {
+  padding: 0.5rem;
+}
+footer .copy {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

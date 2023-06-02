@@ -1,0 +1,23 @@
+footer{
+    background-color: $color-principal;
+    padding-bottom: 0.5rem;
+    .redes{
+        padding-left: 4rem;
+        @include flex(row, no-wrap,start, center,3rem);
+        padding-top:  3rem ;
+        a{
+            img{
+                width: 5rem;
+                height: 5rem;
+                 
+            }
+            & :hover{
+                  padding: 0.5rem;  
+            }   
+        }
+    }
+    .copy{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

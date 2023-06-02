@@ -1,0 +1,48 @@
+main{
+    .secc-ropa{
+        padding: 10rem 2rem 0rem 2rem;
+        @include flex(row,no-wrap, space-between, start  ,0rem);
+    }
+}
+.mas-paginas{
+    background-color: $color-principal;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+    .contenedor-li{
+        height: 100%;
+        @include flex(column, no-wrap, space-evenly ,center,0rem);
+        li{
+            list-style: none;
+            a{
+                color: black;
+                font-size: 2.5rem;
+                font-family: 'Josefin Sans', sans-serif;
+                &:hover{
+                    text-decoration: none;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.galeria{
+    width: 70%;
+    @include grid(repeat(3, auto), repeat(2, auto),1rem, "", center,center);
+    .elemento{
+        overflow:hidden;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 25rem;
+            object-fit:contain;
+        }
+        p{
+            font-size: 1.8rem;
+            font-family:'Times New Roman', Times, serif;
+        }
+    }
+
+}

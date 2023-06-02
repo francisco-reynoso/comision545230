@@ -32,33 +32,41 @@ main{
         @include grid(28rem 28rem , 35.5rem 35.5rem, 1rem,"jeans remeras""zapatillas camperas", center,center);
         .jeans{
             background-color: rgb(6, 11, 11);
-            background-image: url(../../assests/images/jeans.jpg);
+            background-image: url(../assests/images/jeans.jpg);
+            background-position: center center;
+            background-size: cover;
         }
         .remeras{
-            background-color: rgb(85, 37, 126);
-            background-image: url(../../assests/images/remeras.jpg);
+            @extend .jeans;
+            background-image: url(../assests/images/remeras.jpg);
         }
         .zapatillas{
-            background-color: rgb(124, 32, 38);
-            background-image: url(../../assests/images/zapatillas.jpg);
+            @extend .jeans;
+            background-image: url(../assests/images/zapatillas.jpg);
         }
         .camperas{
-            background-color: rgb(69, 96, 96);
-            background-image: url(../../assests/images/camperas.jpg);
+            @extend .jeans;
+            background-image: url(../assests/images/camperas.jpg);
         }
         .bot-ropa{
             @include flex(row,no-wrap,center,center,0);
             button{
                 background-color: black;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 border-radius: 0.5rem;
                 opacity: 0.8;
+                
                 a{
                     color: white;
                     text-decoration: none;
                     padding: 1rem;
                 }
             }
+            & :hover{
+                padding: 0.5rem;
+                opacity: 1;
+                
+            } 
         }
     }
 }
@@ -67,13 +75,29 @@ main{
     @include flex(row, no-wrap, center,center,0);
     .accesorios{
         @include flex(row,no-wrap,center,center,0);
-        width: 30rem;
-        height: 30rem;
-        background-color: rgb(120, 83, 83);
-        background-image: url(../../assests/images/accesorios.jpg);
+        width: 35rem;
+        height: 35rem;
+        background-image: url(../assests/images/accesorios.jpg);
+        background-position: center center;
+        background-size: cover;
         border-radius: 100%;
         margin: 10rem 0rem;
-        
+        button{
+            background-color: black;
+                font-size: 2.5rem;
+                border-radius: 0.5rem;
+                opacity: 0.8;
+                
+                a{
+                    color: white;
+                    text-decoration: none;
+                    padding: 0.5rem;
+                }  
+        } 
+        & :hover{
+            padding: 0.5rem;
+            opacity: 1;
+            
+        } 
     }
-
 }
