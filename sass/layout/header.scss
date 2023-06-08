@@ -1,9 +1,11 @@
 header{
     background-color: $color-principal;
+    width: 100%;
     @include flex(row, no-wrap, space-between,end, 0);
     h1{
         font-family: 'Josefin Sans', sans-serif;
         font-size: 10rem;
+        text-shadow: 5px 5px 10px black;
         padding: 3rem 0rem 3rem 5rem;
     }
 }
@@ -27,7 +29,7 @@ header{
                 font-family:'Josefin Sans', sans-serif;
             }
             &:hover{
-                border-radius: 0.8rem;
+                transform: scale(1.05);
                 
             }
         }

@@ -11,6 +11,7 @@ html {
 
 header {
   background-color: #6D5D6E;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
@@ -21,6 +22,7 @@ header {
 header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 10rem;
+  text-shadow: 5px 5px 10px black;
   padding: 3rem 0rem 3rem 5rem;
 }
 
@@ -56,7 +58,7 @@ header h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 .encabeza .navBar button:hover {
-  border-radius: 0.8rem;
+  transform: scale(1.05);
 }
 .encabeza form {
   font-size: 3rem;
@@ -152,10 +154,6 @@ main .contenedor-texto .texto h3 {
   text-decoration: none;
   padding: 1rem;
 }
-.container-ropa .ropa .bot-ropa :hover {
-  padding: 0.5rem;
-  opacity: 1;
-}
 
 .container-acce {
   display: flex;
@@ -247,24 +245,24 @@ main .img-ingreso div img {
   height: 100%;
 }
 main .img-ingreso div:hover {
-  padding: 0.2rem;
-  border-radius: 10%;
+  transform: scale(1.01);
+  box-shadow: 1px 1px 3rem rgb(111, 107, 107);
 }
 main button {
   font-size: 1.8rem;
   margin: 3rem;
   padding: 0.3rem 0.5rem;
   background-color: #6D5D6E;
-  border-radius: 15%;
+  border: none;
+  border-radius: 1rem;
 }
 main button a {
   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
-  font-weight: 500;
 }
 main button:hover {
-  background-color: #F4EEE0;
-  border-color: #F4EEE0;
+  transform: scale(1.02);
 }
 
 main .secc-ropa {
@@ -331,6 +329,9 @@ main .secc-ropa {
 footer {
   background-color: #6D5D6E;
   padding-bottom: 0.5rem;
+  height: 10rem;
+  width: 100%;
+  margin-top: auto;
 }
 footer .redes {
   padding-left: 4rem;
@@ -345,13 +346,142 @@ footer .redes {
 footer .redes a img {
   width: 5rem;
   height: 5rem;
+  filter: drop-shadow(5px 5px 7px black);
 }
 footer .redes a :hover {
-  padding: 0.5rem;
+  transform: scale(0.9);
 }
 footer .copy {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main {
+  height: 100%;
+}
+
+.container table thead tr th {
+  font-size: 2rem;
+}
+.container table tbody tr td {
+  font-size: 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+}
+body main {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /*del header*/
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  header h1 {
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  .encabeza {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+  /*del footer*/
+  footer .redes {
+    padding: 3rem 2rem 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  footer .redes a img {
+    width: 4rem;
+    height: 4rem;
+  }
+  /* DEL INDEX*/
+  .container-ropa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .container-ropa .ropa {
+    margin-top: 5rem;
+    width: 56rem;
+    height: 170rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .container-ropa .ropa .jeans, .container-ropa .ropa .remeras, .container-ropa .ropa .zapatillas, .container-ropa .ropa .camperas {
+    width: 60%;
+    height: 100%;
+  }
+  .container-ropa {
+    margin-top: 2rem;
+  }
+  /* De las galerias*/
+  main .secc-ropa {
+    padding: 4rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+  .mas-paginas {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .mas-paginas .contenedor-li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0rem;
+    padding: 0rem 0.5rem;
+  }
+  .mas-paginas .contenedor-li li a {
+    color: black;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .galeria {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    grid-template-areas: "";
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

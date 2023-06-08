@@ -35,6 +35,7 @@ main{
             background-image: url(../assests/images/jeans.jpg);
             background-position: center center;
             background-size: cover;
+            
         }
         .remeras{
             @extend .jeans;
@@ -61,12 +62,7 @@ main{
                     text-decoration: none;
                     padding: 1rem;
                 }
-            }
-            & :hover{
-                padding: 0.5rem;
-                opacity: 1;
-                
-            } 
+            }  
         }
     }
 }

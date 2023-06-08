@@ -1,0 +1,7 @@
+body{
+    @include flex(column, no-wrap, center,center,0rem);
+    main{
+        width: 100%;
+    }
+    
+}

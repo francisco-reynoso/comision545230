@@ -38,8 +38,11 @@ main{
                 height: 100%;  
             }
             &:hover{
-                padding: 0.2rem;
-                border-radius: 10%;
+                
+                transform: scale(1.01);
+                box-shadow: 1px 1px 3rem rgb(111, 107, 107);
+                    
+               
             }
             
         }
@@ -49,16 +52,18 @@ main{
         margin: 3rem;
         padding: 0.3rem 0.5rem;
         background-color: $color-principal;
-        border-radius: 15%;
+        border: none;
+        border-radius: 1rem;
+        
         
         a{
             color: black;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
             text-decoration: none;
-            font-weight: 500;
+            
         }
         &:hover{
-            background-color: $color-fondo;
-            border-color: $color-fondo;
+            transform: scale(1.02);
         }
     }
     
