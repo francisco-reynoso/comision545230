@@ -8,3 +8,14 @@
 html{
     font-size: 62.5%;
 }
+
+body{
+    @include flex(column, no-wrap,center,center,0rem);
+    min-height: 100vh;
+    background-color: $color-fondo;
+    main{
+        height: 100%;
+        width: 100%;
+    }
+    
+}

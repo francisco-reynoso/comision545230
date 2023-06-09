@@ -1,0 +1,93 @@
+@media(max-width:450px){
+    /*del header*/
+    header{
+        h1{
+            font-size: 8rem; 
+            padding:1rem 0rem;
+        }
+    }
+    .encabeza{
+        margin-top: 2rem;
+        nav{
+            .navBar{
+                button{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        form{
+            @include flex(column,no-wrap,center,center,0rem);
+            font-size: 2rem;
+            input{
+                border-radius: 1rem;
+                font-size: 2rem;
+        
+        
+            }
+        }
+       
+    }
+
+    /*del index*/
+    main{
+        h2{
+            padding-bottom: 0rem;
+            font-size: 2rem;
+        }
+        .contenedor-texto{
+            .texto{
+                margin-top: 1rem;
+                width: 80%;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .container-acce{
+            .accesorios{
+                @include flex(row,no-wrap,center,center,0);
+                width: 25rem;
+                height: 25rem;
+            }
+        }
+    }
+    
+    /*de la galerias*/
+    .secc-ropa{
+        padding: 0rem 2rem 0rem 2rem;
+        .mas-paginas{
+            width: 100%;
+            .contenedor-li{
+                li{
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*de compras*/
+    .tabla{
+        table{
+            thead{
+                tr{
+                    th{
+                        font-size: 1.5rem;
+                    }
+                }
+    
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
