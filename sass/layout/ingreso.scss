@@ -48,7 +48,7 @@ main{
         }
     } 
     .boton{
-        @include flex(row,no-wrap,start,center,0rem);
+        @include flex(row,no-wrap,center,center,0rem);
         margin: 5rem;
         .btn-regreso{
             background-color: $color-principal;

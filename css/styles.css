@@ -137,15 +137,15 @@ main .contenedor-texto .texto h3 {
 }
 .container-ropa .ropa .jeans, .container-ropa .ropa .camperas, .container-ropa .ropa .zapatillas, .container-ropa .ropa .remeras {
   background-color: rgb(6, 11, 11);
-  background-image: url(../assests/images/jeans.jpg);
+  background-image: url(https://i.ibb.co/pjnh8vd/jeans.jpg);
   background-position: center center;
   background-size: cover;
 }
 .container-ropa .ropa .remeras {
-  background-image: url(../assests/images/remeras.jpg);
+  background-image: url(https://i.ibb.co/5hFDm7t/remeras.jpg);
 }
 .container-ropa .ropa .zapatillas {
-  background-image: url(../assests/images/zapatillas.jpg);
+  background-image: url(https://i.ibb.co/bgy1dWz/zapatillas.jpg);
 }
 .container-ropa .ropa .camperas {
   background-image: url(../assests/images/camperas.jpg);
@@ -187,7 +187,7 @@ main .contenedor-texto .texto h3 {
   gap: 0;
   width: 35rem;
   height: 35rem;
-  background-image: url(../assests/images/accesorios.jpg);
+  background-image: url(https://i.ibb.co/g7qzcbn/accesorios.jpg);
   background-position: center center;
   background-size: cover;
   border-radius: 100%;
@@ -267,7 +267,7 @@ main .boton {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 0rem;
   margin: 5rem;
@@ -565,7 +565,7 @@ footer .copy {
     width: 100%;
   }
   .secc-ropa .mas-paginas .contenedor-li li a {
-    font-size: 1.4rem;
+    font-size: 1.51rem;
   }
   /*de compras*/
   .tabla table thead tr th {

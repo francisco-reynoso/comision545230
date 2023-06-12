@@ -32,18 +32,18 @@ main{
         @include grid(28rem 28rem , 35.5rem 35.5rem, 1rem,"jeans remeras""zapatillas camperas", center,center);
         .jeans{
             background-color: rgb(6, 11, 11);
-            background-image: url(../assests/images/jeans.jpg);
+            background-image: url(https://i.ibb.co/pjnh8vd/jeans.jpg);
             background-position: center center;
             background-size: cover;
             
         }
         .remeras{
             @extend .jeans;
-            background-image: url(../assests/images/remeras.jpg);
+            background-image: url(https://i.ibb.co/5hFDm7t/remeras.jpg);
         }
         .zapatillas{
             @extend .jeans;
-            background-image: url(../assests/images/zapatillas.jpg);
+            background-image: url(https://i.ibb.co/bgy1dWz/zapatillas.jpg);
         }
         .camperas{
             @extend .jeans;
@@ -73,7 +73,7 @@ main{
         @include flex(row,no-wrap,center,center,0);
         width: 35rem;
         height: 35rem;
-        background-image: url(../assests/images/accesorios.jpg);
+        background-image: url(https://i.ibb.co/g7qzcbn/accesorios.jpg);
         background-position: center center;
         background-size: cover;
         border-radius: 100%;
