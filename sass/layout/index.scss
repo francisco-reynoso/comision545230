@@ -47,7 +47,7 @@ main{
         }
         .camperas{
             @extend .jeans;
-            background-image: url(../assests/images/camperas.jpg);
+            background-image: url(https://i.ibb.co/d2cZvBv/camperas.jpg);
         }
         .bot-ropa{
             @include flex(row,no-wrap,center,center,0);
